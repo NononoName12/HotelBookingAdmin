@@ -18,7 +18,7 @@ const EditHotel = () => {
     const fetchHotels = async () => {
       try {
         const response = await fetch(
-          `http://localhost:5000/admin/edit-hotels/${idEdit}`,
+          `https://hotelbookingserver-877m.onrender.com/admin/edit-hotels/${idEdit}`,
           {
             method: "GET",
             headers: {
@@ -74,7 +74,7 @@ const EditHotel = () => {
               <Sidebar />
             </td>
             <td className="column2">
-              <FormEditHotel hotels={hotels}/>
+              <FormEditHotel hotels={hotels} />
             </td>
           </tr>
         </tbody>

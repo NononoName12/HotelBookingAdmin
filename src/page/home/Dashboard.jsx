@@ -17,13 +17,16 @@ const Dashboard = () => {
     const fetchStats = async () => {
       setLoadingStats(true); // Bắt đầu loading
       try {
-        const response = await fetch(`http://localhost:5000/admin/stats`, {
-          method: "GET",
-          headers: {
-            "Content-Type": "application/json",
-          },
-          credentials: "include", // Nếu cần gửi cookie
-        });
+        const response = await fetch(
+          `https://hotelbookingserver-877m.onrender.com/admin/stats`,
+          {
+            method: "GET",
+            headers: {
+              "Content-Type": "application/json",
+            },
+            credentials: "include", // Nếu cần gửi cookie
+          }
+        );
 
         if (!response.ok) {
           const errorData = await response.json();
@@ -61,7 +64,7 @@ const Dashboard = () => {
       setLoadingTransactions(true);
       try {
         const response = await fetch(
-          `http://localhost:5000/admin/transactions`,
+          `https://hotelbookingserver-877m.onrender.com/admin/transactions`,
           {
             method: "GET",
             headers: {

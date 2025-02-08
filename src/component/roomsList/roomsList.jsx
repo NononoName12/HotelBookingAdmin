@@ -23,7 +23,7 @@ const RoomsList = ({ rooms, loading }) => {
     if (confirmDelete) {
       try {
         const response = await fetch(
-          `http://localhost:5000/admin/rooms/${id}`,
+          `https://hotelbookingserver-877m.onrender.com/admin/rooms/${id}`,
           {
             method: "DELETE",
             headers: {

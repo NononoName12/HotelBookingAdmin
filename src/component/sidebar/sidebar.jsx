@@ -14,10 +14,13 @@ const Sidebar = () => {
   const navigate = useNavigate();
   const handleLogout = async () => {
     try {
-      const response = await fetch("http://localhost:5000/auth/logout", {
-        method: "POST",
-        credentials: "include", // Đảm bảo gửi cookie nếu cần
-      });
+      const response = await fetch(
+        "https://hotelbookingserver-877m.onrender.com/auth/logout",
+        {
+          method: "POST",
+          credentials: "include", // Đảm bảo gửi cookie nếu cần
+        }
+      );
 
       if (!response.ok) {
         const errorData = await response.json();

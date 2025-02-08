@@ -16,13 +16,16 @@ const HotelDashboard = () => {
     const fetchHotels = async () => {
       setLoading(true); // Bắt đầu loading
       try {
-        const response = await fetch(`http://localhost:5000/admin/hotels`, {
-          method: "GET",
-          headers: {
-            "Content-Type": "application/json",
-          },
-          credentials: "include", // Nếu cần gửi cookie
-        });
+        const response = await fetch(
+          `https://hotelbookingserver-877m.onrender.com/admin/hotels`,
+          {
+            method: "GET",
+            headers: {
+              "Content-Type": "application/json",
+            },
+            credentials: "include", // Nếu cần gửi cookie
+          }
+        );
 
         if (!response.ok) {
           if (response.status === 401) {
@@ -72,7 +75,7 @@ const HotelDashboard = () => {
               <Sidebar />
             </td>
             <td className="column2">
-              <HotelList hotels={hotels} loading={loading}/>
+              <HotelList hotels={hotels} loading={loading} />
             </td>
           </tr>
         </tbody>

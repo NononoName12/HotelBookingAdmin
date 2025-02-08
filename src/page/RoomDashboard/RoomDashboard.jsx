@@ -16,13 +16,16 @@ const RoomDashboard = () => {
     setLoading(true); // Bắt đầu loading
     const fetchRooms = async () => {
       try {
-        const response = await fetch(`http://localhost:5000/admin/rooms`, {
-          method: "GET",
-          headers: {
-            "Content-Type": "application/json",
-          },
-          credentials: "include", // Nếu cần gửi cookie
-        });
+        const response = await fetch(
+          `https://hotelbookingserver-877m.onrender.com/admin/rooms`,
+          {
+            method: "GET",
+            headers: {
+              "Content-Type": "application/json",
+            },
+            credentials: "include", // Nếu cần gửi cookie
+          }
+        );
 
         if (!response.ok) {
           if (response.status === 401) {

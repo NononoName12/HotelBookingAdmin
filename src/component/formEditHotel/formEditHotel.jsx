@@ -60,7 +60,7 @@ const FormEditHotel = ({ hotels }) => {
     console.log(formData); // In ra dữ liệu form
     try {
       const response = await fetch(
-        `http://localhost:5000/admin/edit-hotels/${idEdit}`,
+        `https://hotelbookingserver-877m.onrender.com/admin/edit-hotels/${idEdit}`,
         {
           method: "PUT", // Hoặc 'PUT' nếu bạn muốn cập nhật dữ liệu
           headers: {

@@ -17,7 +17,7 @@ const TransactionDashboard = () => {
       setLoading(true); // Bắt đầu loading
       try {
         const response = await fetch(
-          `http://localhost:5000/admin/transactionsTotal`,
+          `https://hotelbookingserver-877m.onrender.com/admin/transactionsTotal`,
           {
             method: "GET",
             headers: {

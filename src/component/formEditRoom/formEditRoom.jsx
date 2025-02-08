@@ -55,7 +55,7 @@ const FormEditRoom = ({ rooms }) => {
     console.log(formData); // In ra dữ liệu form
     try {
       const response = await fetch(
-        `http://localhost:5000/admin/edit-rooms/${idEdit}`,
+        `https://hotelbookingserver-877m.onrender.com/admin/edit-rooms/${idEdit}`,
         {
           method: "PUT",
           headers: {
@@ -86,10 +86,13 @@ const FormEditRoom = ({ rooms }) => {
   useEffect(() => {
     const fetchHotels = async () => {
       try {
-        const response = await fetch("http://localhost:5000/admin/hotels", {
-          method: "GET",
-          credentials: "include", // Bao gồm cookie trong yêu cầu
-        });
+        const response = await fetch(
+          "https://hotelbookingserver-877m.onrender.com/admin/hotels",
+          {
+            method: "GET",
+            credentials: "include", // Bao gồm cookie trong yêu cầu
+          }
+        );
         if (!response.ok) {
           throw new Error("Network response was not ok");
         }

@@ -15,7 +15,7 @@ const EditRoom = () => {
     const fetchRooms = async () => {
       try {
         const response = await fetch(
-          `http://localhost:5000/admin/edit-rooms/${idEdit}`,
+          `https://hotelbookingserver-877m.onrender.com/admin/edit-rooms/${idEdit}`,
           {
             method: "GET",
             headers: {
