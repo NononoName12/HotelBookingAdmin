@@ -1,0 +1,20 @@
+.containerInputForm {
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin-bottom: 30px;
+}
+
+.containerInputForm label {
+  font-size: 15px;
+  color: black;
+}
+
+.containerInputForm input {
+  height: 30px;
+  padding-left: 8px;
+  border: none;
+  border-bottom: 2px solid #ced4da; /* Dấu gạch dưới */
+  outline: none; /* Ẩn viền khi chọn input */
+}

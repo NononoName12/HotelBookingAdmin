@@ -1,0 +1,124 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 13px;
+  color: black;
+}
+
+td,
+th {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: left;
+}
+
+.containerTable button {
+  cursor: pointer;
+}
+
+.container {
+  width: 1600px;
+  margin: auto;
+  margin-top: 20px;
+}
+.column1 {
+  width: 14%;
+  color: #868e96;
+}
+
+.column2 {
+  width: 86%;
+  color: #868e96;
+}
+
+.row2 {
+  height: 600px;
+}
+
+.adminPage {
+  text-align: center; /* Căn giữa theo chiều ngang */
+  vertical-align: middle; /* Căn giữa theo chiều dọc */
+}
+
+.row2 .column1 {
+  vertical-align: top; /* Giữ nội dung không căn giữa, mặc định căn top */
+}
+
+.row2 .column2 {
+  vertical-align: top; /* Giữ nội dung không căn giữa, mặc định căn top */
+}
+
+.iconStyle {
+  align-self: flex-end; /* Đưa biểu tượng về phía bên phải */
+  font-size: 24px; /* Kích thước biểu tượng */
+  color: blue; /* Màu sắc của biểu tượng */
+}
+
+.btnLeft {
+  border: none;
+  margin-left: 10px;
+  background-color: white;
+  color: #868e96;
+}
+
+.itemInfor {
+  margin: 10px;
+  margin-left: 15px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column; /* Sắp xếp theo chiều dọc */
+  justify-content: space-between; /* Khoảng cách giữa các hàng */
+  align-items: flex-start; /* Căn lề trái cho các phần tử trong thẻ */
+  padding: 8px;
+  border: none;
+  border-radius: 8px; /* Góc bo tròn cho thẻ */
+  width: 320px; /* Chiều rộng thẻ, có thể điều chỉnh */
+  height: 120px; /* Chiều cao thẻ, có thể điều chỉnh */
+  background-color: white; /* Màu nền của thẻ */
+  box-shadow: 5px 5px 10px 1px #ced4da;
+}
+
+.card h5 {
+  margin: 0; /* Bỏ khoảng cách mặc định */
+}
+
+.card span {
+  margin: 0; /* Bỏ khoảng cách mặc định */
+  font-size: 30px;
+  color: black;
+}
+
+.containerCard {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card .iconStyle {
+  width: 15px; /* Chiều rộng của khung */
+  height: 15px; /* Chiều cao của khung */
+  border-radius: 5px; /* Bo tròn khung thành hình tròn */
+  display: flex; /* Sử dụng Flexbox để căn giữa */
+  align-items: center; /* Căn giữa theo chiều dọc */
+  justify-content: center; /* Căn giữa theo chiều ngang */
+  padding: 5px; /* Khoảng cách giữa biểu tượng và đường viền khung */
+}
+
+.tableResult {
+  margin-top: 20px;
+  height: 550px;
+  border-radius: 8px; /* Góc bo tròn cho thẻ */
+  background-color: white; /* Màu nền của thẻ */
+  box-shadow: 5px 5px 10px 1px #ced4da;
+  padding: 30px;
+}
+.table {
+  margin-top: 10px;
+}
